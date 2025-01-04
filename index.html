@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Personal App</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="personal">
+        <div class="head-personal">
+          <h2>Personal App</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+            ratione similique iure repellat eos ipsa dolorem dicta. Earum, ea
+            iusto!
+          </p>
+        </div>
+        <div class="inputs">
+          <div class="input-label">
+            <label for="fullname">Fullname</label>
+            <input type="text" name="fullname" id="fullname" />
+          </div>
+          <div class="input-label">
+            <label for="job">Job</label>
+            <input type="text" name="job" id="job" />
+          </div>
+          <div class="input-label">
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" id="salary" />
+          </div>
+          <button id="addperson">Add</button>
+        </div>
+        <div class="data-table">
+          <div class="person-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Fullname</th>
+                  <th>Job</th>
+                  <th>Salary</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="empty-alert">
+          <p></p>
+          <div class="exit-empty-alert">
+            <span>❌</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+body {
+    background-color: beige;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 20px;
+}
+
+.personal {
+    position: relative;
+}
+
+.empty-alert {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.855);
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 15px 45px;
+    color: #fff;
+}
+
+.exit-empty-alert {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.exit-empty-alert:hover {
+    background-color: rgba(28, 153, 38, 0.611);
+}
+
+.exit-empty-alert span {
+    font-size: 15px;
+}
+
+.empty-alert p {
+    font-size: 50px;
+}
+
+.head-personal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-personal h2 {
+    font-size: 40px;
+}
+
+p {
+    margin-block: 15px;
+    width: 450px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 15px;
+}
+
+.inputs button {
+    width: 300px;
+    margin-block: 15px;
+    padding-block: 4px;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: rgb(40, 176, 40);
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.inputs button:hover {
+    background-color: rgb(32, 141, 32);
+}
+
+.inputs .input-label {
+    margin-block: 5px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.input-label input {
+    width: 250px;
+
+}
+
+.input-label input[type=number]::-webkit-inner-spin-button,
+.input-label input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-label label {
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    font-size: 20px;
+}
+
+.input-label input {
+    padding-inline: 15px;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.input-label:hover {
+    label {
+        color: rgb(182, 180, 111);
+    }
+
+    input {
+        border-bottom: 1px solid #554543;
+    }
+}
+
+.input-label input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(182, 180, 111);
+}
+
+
+
+.data-table {
+    display: flex;
+    justify-content: center;
+
+}
+
+.person-table {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.person-table::-webkit-scrollbar {
+    width: 7px;
+}
+
+.person-table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(128, 128, 128, 0.446);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.person-table::-webkit-scrollbar-thumb {
+    background: rgb(209, 206, 112);
+    border-radius: 10px;
+}
+
+.person-table::-webkit-scrollbar-thumb:hover {
+    background: rgba(220, 217, 122, 0.684);
+}
+
+.data-table table {
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr {
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    border-bottom: 1px solid #4d4d4d30;
+}
+
+th,
+td {
+    padding-block: 8px;
+}
+
+th {
+    font-size: 20px;
+    background-color: rgb(250, 250, 197);
+    border-bottom: 1px solid #4d4d4d30;
+}
+
+tbody tr:hover {
+    background-color: rgba(182, 180, 111, 0.605);
+    color: #fff;
+    border-bottom: 1px solid rgb(179, 176, 74);
+}
+
+table thead {
+    position: sticky;
+    top: 0;
+}
+
+
+.delete-person {
+    border: none;
+    background-color: rgba(240, 39, 39, 0.653);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.delete-person:hover {
+    background-color: rgb(240, 39, 39);
+    cursor: pointer;
+}
